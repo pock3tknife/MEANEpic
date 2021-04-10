@@ -1,3 +1,11 @@
+<header class="global-header">
+  <div class="row">
+    <div class="global-logo">
+      <a href="/">MEAN-Epic</a>
+    </div>
+    <app-nav-logoff></app-nav-logoff>
+  </div>
+</header>
 <table *ngIf="userDetails" class="table-fill">
   <thead>
     <tr>
@@ -17,10 +25,10 @@
       <td>Email</td>
       <td>{{ userDetails.email }}</td>
     </tr>
-    <tr>
+    <!--<tr>
       <td colspan="2" class="text-center">
         <input type="button" (click)="onLogout()" value="Logout" />
       </td>
-    </tr>
+    </tr>-->
   </tbody>
 </table>

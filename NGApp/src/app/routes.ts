@@ -4,6 +4,7 @@ import { SignUpComponent } from "./user/sign-up/sign-up.component";
 import { SignInComponent } from "./user/sign-in/sign-in.component";
 import { UserProfileComponent } from "./user-profile/user-profile.component";
 import { EmployeeComponent } from "./employee/employee.component";
+import { HomeComponent } from "./home/home.component";
 import { AuthGuard } from "./auth/auth.guard";
 
 export const appRoutes: Routes = [
@@ -27,8 +28,12 @@ export const appRoutes: Routes = [
     component: EmployeeComponent,
   },
   {
+    path: "home",
+    component: HomeComponent,
+  },
+  {
     path: "",
-    redirectTo: "/",
+    redirectTo: "/home",
     pathMatch: "full",
   },
 ];
