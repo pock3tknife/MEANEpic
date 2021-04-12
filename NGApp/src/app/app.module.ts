@@ -17,12 +17,12 @@ import { UserService } from "./shared/user.service";
 import { EmployeeComponent } from "./employee/employee.component";
 import { NavContainerComponent } from "./nav-container/nav-container.component";
 import { FooterComponent } from "./footer/footer.component";
+import { HomeComponent } from "./home/home.component";
+import { NavLogoffComponent } from "./nav-logoff/nav-logoff.component";
 
 //other
 import { AuthGuard } from "./auth/auth.guard";
 import { AuthInterceptor } from "./auth/auth.interceptor";
-import { HomeComponent } from './home/home.component';
-import { NavLogoffComponent } from './nav-logoff/nav-logoff.component';
 
 @NgModule({
   declarations: [
