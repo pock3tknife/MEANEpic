@@ -10,7 +10,14 @@ import { Router } from "@angular/router";
 export class NavLogoffComponent implements OnInit {
   constructor(private userService: UserService, private router: Router) {}
 
-  ngOnInit() {}
+  model = {
+    username: "",
+  };
+
+  ngOnInit() {
+    /* localStorage.setItem("username", "reynald");*/
+    this.model.username = localStorage.getItem("username");
+  }
 
   onLogout() {
     this.userService.deleteToken();

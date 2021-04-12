@@ -1,4 +1,4 @@
-<nav class="nav-menu">
+<nav class="nav-menu" style="padding-top: 70px; margin-bottom: 40px">
   <ul>
     <li><a href="/">Home</a></li>
     <li id="services">
@@ -133,8 +133,10 @@
     </li>
     <li><a href="/">TreeView</a></li>
     <li><a href="/userprofile">User Profile</a></li>
-    <li>
-      <input type="button" (click)="onLogout()" value="Logout" />
-    </li>
+    <!--<li>-->
+
+    <!--</li>-->
   </ul>
+  <label>Welcome {{ model.username }}</label>
+  <input type="button" (click)="onLogout()" value="Logout" />
 </nav>
