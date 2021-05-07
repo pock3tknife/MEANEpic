@@ -2,11 +2,11 @@
 Install dependencies:
 npm install --save
 
-Run UserServer
+Run on UserServer:
 node app.js
 
-Run EmployeeNodeJS
+Run on EmployeeNodeJS:
 node index.js
 
-Run NGApp
+Run NGApp:
 ng serve --o
